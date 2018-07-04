@@ -15,4 +15,9 @@ defmodule Confyplan do
   def run do
     "hello world"
   end
+
+  # Track: array of scheduled talks, title
+  # Scheduled Talk: start time, link to talk
+  # Scheduler
+
 end

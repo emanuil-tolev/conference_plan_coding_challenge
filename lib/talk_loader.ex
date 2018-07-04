@@ -31,7 +31,6 @@ defmodule TalkLoader do
       end
   end
 
-  # TODO test
   def extract_duration(captures) do
     case captures["duration"] do
       "lightning" -> 5
