@@ -1,7 +1,10 @@
 defmodule AcceptanceTest do
   use ExUnit.Case
+
+  @tag :skip
   doctest Confyplan
 
+  @tag :skip
   test "it outputs the conference schedule" do
     assert Confyplan.run() == """
                               Track 1:
