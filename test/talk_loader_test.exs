@@ -42,4 +42,14 @@ defmodule TalkLoaderTest do
     assert TalkLoader.parse_line("Rails for Python Developers lightning") ==
       %Talk{title: "Rails for Python Developers", duration: 5}
   end
+
+  test "#extract_duration(captures) understands lightning talks" do
+    captures = %{"duration" => "lightning"}
+    assert TalkLoader.extract_duration(captures) == 5
+  end
+
+  test "#extract_duration(captures) extracts talk length" do
+    captures = %{"duration" => "45min", "minutes" => "45"}
+    assert TalkLoader.extract_duration(captures) == 45
+  end
 end
