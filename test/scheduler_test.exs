@@ -5,25 +5,25 @@ defmodule SchedulerTest do
   test "given an array of talks, it assigns them to tracks" do
     # TODO how to fixtures, share with talk_loader_test.exs
     talks = [
-      %Talk{title: "Writing Fast Tests Against Enterprise Rails", duration: 60},
-      %Talk{title: "Overdoing it in Python", duration: 45},
-      %Talk{title: "Lua for the Masses", duration: 30},
-      %Talk{title: "Ruby Errors from Mismatched Gem Versions", duration: 45},
-      %Talk{title: "Common Ruby Errors", duration: 45},
-      %Talk{title: "Rails for Python Developers", duration: 5},
-      %Talk{title: "Communicating Over Distance", duration: 60},
-      %Talk{title: "Accounting-Driven Development", duration: 45},
-      %Talk{title: "Woah", duration: 30},
-      %Talk{title: "Sit Down and Write", duration: 30},
-      %Talk{title: "Pair Programming vs Noise", duration: 45},
-      %Talk{title: "Rails Magic", duration: 60},
-      %Talk{title: "Ruby on Rails: Why We Should Move On", duration: 60},
-      %Talk{title: "Clojure Ate Scala (on my project)", duration: 45},
-      %Talk{title: "Programming in the Boondocks of Seattle", duration: 30},
-      %Talk{title: "Ruby vs. Clojure for Back-End Development", duration: 30},
-      %Talk{title: "Ruby on Rails Legacy App Maintenance", duration: 60},
-      %Talk{title: "A World Without HackerNews", duration: 30},
-      %Talk{title: "User Interface CSS in Rails Apps", duration: 30}
+      %Talk{title: "Practical Web Animation", duration: 60},
+      %Talk{title: "New Chrome DevTools", duration: 45},
+      %Talk{title: "Web Performance", duration: 30},
+      %Talk{title: "React, Vue and Angular", duration: 45},
+      %Talk{title: "Common Developer Mistakes", duration: 45},
+      %Talk{title: "How To Read Hacker News", duration: 5},
+      %Talk{title: "Working Remotely", duration: 60},
+      %Talk{title: "How We Spammed The World", duration: 45},
+      %Talk{title: "Security Is Not A Pro Feature", duration: 30},
+      %Talk{title: "Raspberry Pi antics", duration: 30},
+      %Talk{title: "Levelling Up Pair Programming", duration: 45},
+      %Talk{title: "Why Rails Is Still Relevant", duration: 60},
+      %Talk{title: "Learning New Languages", duration: 60},
+      %Talk{title: "Tests Are Important", duration: 45},
+      %Talk{title: "How To Start A Community Group", duration: 30},
+      %Talk{title: "Building Security Into Code", duration: 30},
+      %Talk{title: "BDD", duration: 60},
+      %Talk{title: "Browser Performance", duration: 30},
+      %Talk{title: "UX Is Still A Thing", duration: 30}
     ]
 
     tracks = [
@@ -45,25 +45,25 @@ defmodule SchedulerTest do
             %ScheduledTalk{
               start_time: ~T[09:00:00],
               talk: %Talk{
-                title: "Writing Fast Tests Against Enterprise Rails",
+                title: "Practical Web Animation",
                 duration: 60}
             },
             %ScheduledTalk{
               start_time: ~T[10:00:00],
               talk: %Talk{
-                title: "Overdoing it in Python",
+                title: "New Chrome DevTools",
                 duration: 45}
             },
             %ScheduledTalk{
               start_time: ~T[10:45:00],
               talk: %Talk{
-                title: "Lua for the Masses",
+                title: "Web Performance",
                 duration: 30}
             },
             %ScheduledTalk{
               start_time: ~T[11:15:00],
               talk: %Talk{
-                title: "Ruby Errors from Mismatched Gem Versions",
+                title: "React, Vue and Angular",
                 duration: 45}
             }
           ]},
@@ -71,43 +71,42 @@ defmodule SchedulerTest do
             %ScheduledTalk{
               start_time: ~T[13:00:00],
               talk: %Talk{
-                title: "Ruby on Rails: Why We Should Move On",
+                title: "Learning New Languages",
                 duration: 60}
             },
             %ScheduledTalk{
               start_time: ~T[14:00:00],
               talk: %Talk{
-                title: "Common Ruby Errors",
+                title: "Common Developer Mistakes",
                 duration: 45}
             },
             %ScheduledTalk{
               start_time: ~T[14:45:00],
               talk: %Talk{
-                title: "Pair Programming vs Noise",
+                title: "Levelling Up Pair Programming",
                 duration: 45}
             },
             %ScheduledTalk{
               start_time: ~T[15:30:00],
               talk: %Talk{
-                title: "Programming in the Boondocks of Seattle",
+                title: "How To Start A Community Group",
                 duration: 30}
             },
             %ScheduledTalk{
               start_time: ~T[16:00:00],
               talk: %Talk{
-                title: "Ruby vs. Clojure for Back-End Development",
+                title: "Building Security Into Code",
                 duration: 30}
             },
             %ScheduledTalk{
               start_time: ~T[16:30:00],
               talk: %Talk{
-                title: "User Interface CSS in Rails Apps",
+                title: "UX Is Still A Thing",
                 duration: 30}
             }
           ]}
         ]
       },
-
       %Track{
         title: "Track 2",
         sessions: [
@@ -115,25 +114,25 @@ defmodule SchedulerTest do
             %ScheduledTalk{
               start_time: ~T[09:00:00],
               talk: %Talk{
-                title: "Communicating Over Distance",
+                title: "Working Remotely",
                 duration: 60}
             },
             %ScheduledTalk{
               start_time: ~T[10:00:00],
               talk: %Talk{
-                title: "Rails Magic",
+                title: "Why Rails Is Still Relevant",
                 duration: 60}
             },
             %ScheduledTalk{
               start_time: ~T[11:00:00],
               talk: %Talk{
-                title: "Woah",
+                title: "Security Is Not A Pro Feature",
                 duration: 30}
             },
             %ScheduledTalk{
               start_time: ~T[11:30:00],
               talk: %Talk{
-                title: "Sit Down and Write",
+                title: "Raspberry Pi antics",
                 duration: 30}
             }
           ]},
@@ -141,31 +140,31 @@ defmodule SchedulerTest do
             %ScheduledTalk{
               start_time: ~T[13:00:00],
               talk: %Talk{
-                title: "Accounting-Driven Development",
+                title: "How We Spammed The World",
                 duration: 45}
             },
             %ScheduledTalk{
               start_time: ~T[13:45:00],
               talk: %Talk{
-                title: "Clojure Ate Scala (on my project)",
+                title: "Tests Are Important",
                 duration: 45}
             },
             %ScheduledTalk{
               start_time: ~T[14:30:00],
               talk: %Talk{
-                title: "A World Without HackerNews",
+                title: "Browser Performance",
                 duration: 30}
             },
             %ScheduledTalk{
               start_time: ~T[15:00:00],
               talk: %Talk{
-                title: "Ruby on Rails Legacy App Maintenance",
+                title: "BDD",
                 duration: 60}
             },
             %ScheduledTalk{
               start_time: ~T[16:00:00],
               talk: %Talk{
-                title: "Rails for Python Developers",
+                title: "How To Read Hacker News",
                 duration: 5}
             }
           ]}

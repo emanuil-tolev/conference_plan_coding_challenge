@@ -8,30 +8,30 @@ defmodule AcceptanceTest do
   test "it outputs the conference schedule" do
     assert Confyplan.run() == """
                               Track 1:
-                              09:00AM Writing Fast Tests Against Enterprise Rails 60min
-                              10:00AM Overdoing it in Python 45min
-                              10:45AM Lua for the Masses 30min
-                              11:15AM Ruby Errors from Mismatched Gem Versions 45min
+                              09:00AM Practical Web Animation
+                              10:00AM New Chrome DevTools
+                              10:45AM Web Performance
+                              11:15AM React, Vue and Angular
                               12:00PM Lunch
-                              01:00PM Ruby on Rails: Why We Should Move On 60min
-                              02:00PM Common Ruby Errors 45min
-                              02:45PM Pair Programming vs Noise 45min
-                              03:30PM Programming in the Boondocks of Seattle 30min
-                              04:00PM Ruby vs. Clojure for Back-End Development 30min
-                              04:30PM User Interface CSS in Rails Apps 30min
+                              01:00PM Learning New Languages
+                              02:00PM Common Developer Mistakes
+                              02:45PM Levelling Up Pair Programming
+                              03:30PM How To Start A Community Group
+                              04:00PM Building Security Into Code
+                              04:30PM UX Is Still A Thing
                               05:00PM Networking Event
-                               
+
                               Track 2:
-                              09:00AM Communicating Over Distance 60min
-                              10:00AM Rails Magic 60min
-                              11:00AM Woah 30min
-                              11:30AM Sit Down and Write 30min
+                              09:00AM Working Remotely
+                              10:00AM Why Rails Is Still Relevant
+                              11:00AM Security Is Not A Pro Feature
+                              11:30AM Raspberry Pi antics
                               12:00PM Lunch
-                              01:00PM Accounting-Driven Development 45min
-                              01:45PM Clojure Ate Scala (on my project) 45min
-                              02:30PM A World Without HackerNews 30min
-                              03:00PM Ruby on Rails Legacy App Maintenance 60min
-                              04:00PM Rails for Python Developers lightning
+                              01:00PM How We Spammed The World
+                              01:45PM Tests Are Important
+                              02:30PM Browser Performance
+                              03:00PM BDD
+                              04:00PM How To Read Hacker News
                               05:00PM Networking Event
                               """
   end
